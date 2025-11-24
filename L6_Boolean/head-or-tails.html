@@ -1,0 +1,46 @@
+    <html>
+        <head>
+            <title>HeadsOrTails</title>
+            <style>
+                    button{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 100%;
+                        border: none;
+            
+                    }
+                </style>
+        </head>
+        <body>
+            <p>Guess the output</p>
+            <button onclick="
+            var random=Math.random();
+            var result='';
+            if(random>=0 && random<0.5){
+                result='heads';
+            }else{
+                result='tails'
+            }
+            
+            if(result=='heads'){
+                alert('You Won.');
+            }else{
+                alert('You Lost.');
+            }
+            ">Heads</button>
+            <button onclick="
+            var random=Math.random();
+            var result='';
+            if(random>=0 && random<0.5){
+                result='heads';
+            }else{
+                result='tails'
+            }
+            if(result=='tails'){
+                alert('You Won.');
+            }else{
+                alert('You Lost.');
+            }
+            ">Tails</button>
+        </body>
+    </html>

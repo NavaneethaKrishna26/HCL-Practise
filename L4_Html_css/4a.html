@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basics</title>
+    <style>
+      .cart {
+        background-color: yellow;
+      }
+      .buy {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!---->
+    <p>Adults Plain Cotton T-shirt</p>
+    <p>Price: $7.99</p>
+    <button title="add to cart" class="cart" onclick="alert('Added')">
+      Add to cart
+    </button>
+    <button title="buy" class="buy" onclick="buyed()">Buy now</button>
+    <script>
+      function buyed() {
+        console.log("Loading...");
+        alert("Purchased");
+      }
+    </script>
+  </body>
+</html>

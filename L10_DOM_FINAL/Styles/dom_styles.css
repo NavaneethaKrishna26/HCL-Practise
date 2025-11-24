@@ -1,0 +1,27 @@
+body {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subscribe {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+}
+.subscribed {
+  background-color: gainsboro;
+  color: black;
+  border: none;
+}
+.input {
+  padding: 10px 10px;
+}
+.calc {
+  padding: 12px 10px;
+  background-color: green;
+  color: white;
+  border: none;
+}

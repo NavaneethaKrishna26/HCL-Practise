@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Variables
+        </title>
+    </head>
+    <body>
+        <button onclick="
+            console.log(`Cart quantity: ${quantity}`);
+            ">
+            Show Quantity
+        </button>
+
+        <button onclick="
+        quantity++;
+        console.log(`Cart quantity: ${quantity}`);
+        ">
+            Add to Cart
+        </button>
+
+        <button onclick="
+        quantity+=2;
+        console.log(`Cart quantity: ${quantity}`);
+        ">
+            +2
+        </button>
+
+        <button onclick="
+        quantity+=3
+        console.log(`Cart quantity: ${quantity}`);
+        ">
+            +3
+        </button>
+
+        <button onclick="
+        quantity=0;
+        console.log(`Cart quantity: ${quantity}`);
+        ">
+            Reset Cart
+        </button>
+        <button onclick="
+        if (quantity>0){
+        quantity--;
+        console.log(`Cart quantity: ${quantity}`);
+        }else{
+            console.log('No items in the cart');
+        }
+        
+        ">
+            Remove from cart
+        </button>
+        <script>
+            let quantity=0;
+        </script>
+    </body>
+</html>

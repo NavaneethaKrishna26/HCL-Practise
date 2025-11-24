@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="input"> 
+    <button onclick="submit()">Submit</button>
+    <p class="para"></p>
+    <script>
+       function submit(){
+        document.querySelector('.para').innerHTML=document.querySelector('.input').value;
+       }
+    </script>
+</body>
+</html>

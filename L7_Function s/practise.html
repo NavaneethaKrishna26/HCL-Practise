@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <button id="but" onclick="fun()">submit</button>
+    <script>
+      function sum(...args) {
+        let s;
+        for (arg of args) {
+          s += arg;
+        }
+        return s;
+      }
+      function fun() {
+        let x = sum("adith",1, 2, 3, 4, 5);
+        document.body.innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
