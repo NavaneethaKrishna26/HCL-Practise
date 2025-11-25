@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" class="inp" placeholder="Type something">
+    <p class="para"></p>
+    <script>
+        let store='';
+        document.querySelector(".inp").addEventListener("keydown",()=>{
+        store=document.querySelector(".inp").value;
+        document.querySelector('.para').innerHTML=`Key Pressed: ${store}`;
+        })
+    </script>
+  </body>
+</html>

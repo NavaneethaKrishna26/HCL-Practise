@@ -1,0 +1,27 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            p{
+                font-size: x-large;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Character Counter App</p>
+        <input class="ipt" type="text" placeholder="Enter the text here">
+        <p class="para"></p>
+        <script>
+            // function submit(){
+            //     let val=document.querySelector('.ipt').value.length;
+            //     document.querySelector('.para').innerHTML=val;
+            // }
+            document.querySelector('.ipt').addEventListener("keyup",()=>{
+            let val= document.querySelector('.ipt').value.length;
+                document.querySelector('.para').innerHTML=val;
+            })
+        </script>
+    </body>
+    </html>

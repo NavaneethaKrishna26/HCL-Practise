@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .div{
+        width: fit-content;
+        background-color: #F7F1DE;
+        padding: 30px;
+      }
+      p{
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+      }
+      button{
+        padding: 10px;
+      }
+      input{
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+      <p>Login</p>
+      <input type="text" class="username" placeholder="Enter username" />
+      <div class="sub">
+        <input type="password" class="password" placeholder="Enter password" />
+        <button class="hide">Show</button>
+      </div>
+
+      <button class="submit" >Submit</button>
+
+      <script>
+         const password=document.querySelector('.password');
+         const btn=document.querySelector('.hide');
+         document.querySelector('.hide').addEventListener("click",()=>{
+          if(password.type==='password'){
+            password.type='text';
+            btn.innerHTML='Hide';
+          }else{
+            password.type='password';
+            btn.innerHTML='Show';
+          }
+         })
+      </script>
+    </div>
+  </body>
+</html>

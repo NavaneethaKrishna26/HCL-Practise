@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="fun('on')">ON</button>
+    <button onclick="fun('off')">OFF</button>
+    <br>
+    <img class="img" src="./images/off.png" alt="" srcset="">
+    <script>
+        function fun(val){
+            if(val==='on'){
+                document.querySelector('.img').src='./images/on.png'
+            }else{
+                 document.querySelector('.img').src='./images/off.png'
+            }
+        }
+    </script>
+</body>
+</html>

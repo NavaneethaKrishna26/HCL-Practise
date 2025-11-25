@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Check box</p>
+    <label>
+      <input type="checkbox" class="ipt" onclick="func()" />
+      I agree your terms and conditions
+    </label>
+    <br />
+    <br />
+    <button class="btn" disabled>Submit</button>
+    <script>
+         const cb = document.querySelector(".ipt");
+        const but = document.querySelector(".btn");
+      function func() {
+       
+        if (cb.checked) {
+          but.disabled = false;
+        } else {
+          but.disabled = true;
+        }
+      }
+    </script>
+  </body>
+</html>

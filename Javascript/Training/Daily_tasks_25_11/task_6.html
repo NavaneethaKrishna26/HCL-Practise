@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Counter App</p>
+    <button class="inc">Increment</button>
+    <button class="dec">Decrement</button>
+    <p class="para"></p>
+    <script>
+      let count = 0;
+      let parag = document.querySelector(".para");
+      document.querySelector(".inc").addEventListener("click", () => {
+        count++;
+        parag.innerHTML = count;
+      });
+      document.querySelector(".dec").addEventListener("click", () => {
+        count--;
+        parag.innerHTML = count;
+      });
+    </script>
+  </body>
+</html>

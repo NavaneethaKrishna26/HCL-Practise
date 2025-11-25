@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+        button{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <img class="img" src="./images/img1.jpg" alt="" />
+    <button onclick="prev()"><<</button>
+    <button onclick="next()">>></button>
+    <script>
+      let count = 1;
+      function next() {
+        if (count < 3) {
+          count++;
+          document.querySelector(".img").src = `./images/img${count}.jpg`;
+        }
+      }
+      function prev() {
+        if (count > 1) {
+          count--;
+          document.querySelector(".img").src = `./images/img${count}.jpg`;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Form validation</p>
+    <form action="">
+      <label for="">Enter Name:</label>
+      <input class="name" type="text" />
+      <br />
+      <label for="">Enter Email:</label>
+      <input class="em" type="email" />
+      <br />
+      <label for="">Enter Password:</label>
+      <input class="pass" type="password" />
+      <br />
+      <button class="btn" type="submit">Submit</button>
+    </form>
+    <script>
+      document.querySelector(".btn").addEventListener("click", () => {
+        const name = document.querySelector(".name");
+        const mail = document.querySelector(".em");
+        const pass = document.querySelector(".pass");
+        if(name.value===''){
+            alert("Name should not be empty");
+        }
+        else if(!mail.value.includes('@')){
+            alert("Enter valid Email");
+        }else if(pass.value.length<6){
+            alert("Password should be more than length 6");
+        }
+      });
+    </script>
+  </body>
+</html>
