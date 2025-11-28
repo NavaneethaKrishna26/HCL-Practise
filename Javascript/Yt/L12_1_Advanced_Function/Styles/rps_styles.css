@@ -1,0 +1,36 @@
+body {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+.rps {
+  font-size: x-large;
+}
+.shapes {
+  width: 100px;
+  height: 100px;
+}
+.img-button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 20px;
+  margin-left: 20px;
+}
+.rst {
+  padding: 12px 15px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: large;
+  border-radius: 20px;
+}
+.stopplay{
+ padding: 12px 15px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: large;
+  border-radius: 20px;
+}
