@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title class="title">Document</title>
+  </head>
+  <body>
+    <input id="input" type="text" placeholder="Enter a word" />
+    <button id="btn">Search</button>
+    <p id="para"></p>
+    <script>
+        let arr=[];
+      async function countryApi(country) {
+        try {
+          const response = await fetch(
+            `https://api.api-ninjas.com/v1/county?county=${country}`,
+            {
+              headers: {
+                "X-Api-Key": "MP2b4q/Xn4dthjLcwxxJwA==irAoj65JMAZlQ5HA",
+              },
+            }
+          );
+
+          if (!response.ok) {
+            throw new Error("Word not found");
+          }
+
+          const data = await response.json();
+          console.log(JSON.stringify(data));
+          document.getElementById("para").textContent = JSON.stringify(data,null,2);
+        } catch (error) {
+          console.log("Error:", error.message);
+          document.getElementById("para").innerHTML = "Error: " + error.message;
+        }
+      }
+
+      // run only when the button is clicked
+      document.getElementById("btn").addEventListener("click", function () {
+        const val = document.getElementById("input").value.trim();
+        countryApi(val);
+      });
+    </script>
+  </body>
+</html>
