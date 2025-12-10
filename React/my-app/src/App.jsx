@@ -1,15 +1,10 @@
 import { React, useState } from "react";
-import Card from "./Card";
-import "../Styles/styles.css";
+
+import Counter from "./Counter";
 function App() {
   return (
     <>
-      <div className="cards">
-        <Card name="fuji"/>
-        <Card name="cheetah"/>
-        <Card name="lion"/>
-        <Card name="tiger"/>
-      </div>
+      <Counter />
     </>
   );
 }
