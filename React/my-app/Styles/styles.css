@@ -1,20 +1,15 @@
-.card{
-  width: 200px;
-  height: 300px;
-  background-color: darkgrey;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-img{
-  width: 200px;
-  height: 300px;
-}
-.cards{
-  display: flex;
-  flex-direction: row;
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
   gap: 20px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+}
+
+.card {
+  background: #eee;
+  padding: 10px;
+  border-radius: 8px;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
 }
