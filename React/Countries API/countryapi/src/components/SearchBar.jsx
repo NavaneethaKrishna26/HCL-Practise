@@ -7,23 +7,18 @@ function SearchBar({ countries, setFiltered }) {
     const value = e.target.value.toLowerCase();
     setQuery(value);
 
-    const result = countries.filter((c) => {
-      const name = c.name?.common?.toLowerCase() || "";
-      const cca2 = c.cca2?.toLowerCase() || "";
-      const cca3 = c.cca3?.toLowerCase() || "";
-      const capital = c.capital?.[0]?.toLowerCase() || "";
-      const region = c.region?.toLowerCase() || "";
-
-      return (
-        name.includes(value) ||
-        cca2.includes(value) ||
-        cca3.includes(value) ||
-        capital.includes(value) ||
-        region.includes(value)
-      );
-    });
-
-    setFiltered(result);
+    let matchedItems=[];
+    countries.map((c)=>{
+      const name=c.name?.common?.toLowerCase()||"";
+      const cca2=c.cca2?.toLowerCase()||"";
+      const cca3=c.cca3?.toLowerCase()||"";
+      const capital=c.capital?.[0]?.toLowerCase()||"";
+      const region=c.region?.toLowerCase()||"";
+      if(name.includes(value)||cca2.includes(value)||cca3.includes(value)||capital.includes(value)||region.includes(value)){
+        matchedItems.push(c);
+      }
+    })
+    setFiltered(matchedItems);
   };
 
   return (

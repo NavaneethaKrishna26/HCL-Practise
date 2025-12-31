@@ -7,6 +7,10 @@ function search() {
   }
   fetchmeals(query);
 }
+
+
+
+
 async function fetchmeals(query) {
   try {
     document.getElementById("message").textContent = "Loading...";
@@ -16,6 +20,7 @@ async function fetchmeals(query) {
         query
       )}`
     );
+    console.log(response);
     if (!response.ok) {
       throw new Error("Failed to fetch meals");
     }
@@ -32,8 +37,11 @@ async function fetchmeals(query) {
     document.getElementById("message").textContent = "Something went wrong";
   }
 }
-const mealscontainer = document.getElementById("meals-container");
 
+
+
+
+const mealscontainer = document.getElementById("meals-container");
 let leastIngrediantMeal;
 let max = 10000;
 function renderMeals(meals) {
@@ -46,6 +54,8 @@ function renderMeals(meals) {
   });
   createfinalmeal(leastIngrediantMeal);
 }
+
+
 function createfinalmeal(meal) {
   mealscontainer.innerHTML = "";
   const mealdiv = document.createElement("div");
