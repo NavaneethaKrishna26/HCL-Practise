@@ -1,0 +1,47 @@
+.artist-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.artist-card {
+  width: 140px;
+  padding: 12px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.artist-avatar {
+  height: 90px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: auto;
+}
+
+.artist-name {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.follow-btn {
+  padding: 6px 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.unfollow-btn {
+  padding: 6px 12px;
+  background: #e0e0e0;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}

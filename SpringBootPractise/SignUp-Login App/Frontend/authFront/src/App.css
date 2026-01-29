@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full page center alignment */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Common container for login & signup */
+.form,
+.login {
+  background: #ffffff;
+  padding: 30px 35px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+.form h1,
+.login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.form input,
+.login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+/* Input focus */
+.form input:focus,
+.login input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Buttons */
+.form button,
+.login button {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Button hover */
+.form button:hover,
+.login button:hover {
+  background: #5a67d8;
+}
+
+/* Text below login form */
+.login p {
+  text-align: center;
+  margin: 15px 0 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Signup switch button */
+.login button:last-child {
+  background: transparent;
+  color: #667eea;
+  border: 1px solid #667eea;
+  margin-top: 5px;
+}
+
+.login button:last-child:hover {
+  background: #667eea;
+  color: #fff;
+}
