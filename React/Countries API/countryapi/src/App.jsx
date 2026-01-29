@@ -8,10 +8,11 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all?fields=name,cca2,cca3,capital,region,flags")
+    fetch("https://restcountries.com/v3.1/all?fields=name,cca2,cca3,capital,region,flags,population")
       .then(res => res.json())
       .then(data => {
         setCountries(data);
+        console.log(data);
         setFiltered(data);
         setLoading(false);
       })

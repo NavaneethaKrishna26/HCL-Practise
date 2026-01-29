@@ -5,7 +5,8 @@ function CountryCard({ country }) {
       <h3>{country.name.common}</h3>
       <p><b>Capital:</b> {country.capital?.[0]}</p>
       <p><b>Region:</b> {country.region}</p>
-      <p><b>Code:</b> {country.cca3}</p>
+      <p><b>Population:</b> {country.population}</p>
+      
     </div>
   );
 }
